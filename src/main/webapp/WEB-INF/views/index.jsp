@@ -7,6 +7,14 @@
         <title> RockPaperScissors </title>
     </head>
     <body>
-        <div> ${pc} </div>
+        <form:form action="oneTwoThree" method="post" modelAttribute="result">
+            <select name="trie" id="trie">
+                          <option value="Rock">Rock</option>
+                          <option value="Paper">Paper</option>
+                          <option value="Scissors">Scissors</option>
+            </select>
+            <input type="submit" value="play"/>
+        </form:form>
+        <div> ${result} </div>
     </body>
 </html>
